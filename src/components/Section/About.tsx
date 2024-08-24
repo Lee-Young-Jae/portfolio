@@ -1,5 +1,6 @@
 import Section from "../common/Section";
 import styled from "styled-components";
+import { colors } from "../../constants";
 
 const AboutSection = () => {
   return (
@@ -39,7 +40,7 @@ const Styled = {
     margin-bottom: 20px;
   `,
   Strong: styled.strong`
-    color: #64ffda;
+    color: ${colors.MINT};
   `,
   LinkContainer: styled.div`
     display: flex;
@@ -47,7 +48,7 @@ const Styled = {
   `,
   Link: styled.a`
     text-decoration: none;
-    color: #64ffda;
+    color: ${colors.MINT};
     font-size: 18px;
     margin: 0 10px;
   `,
