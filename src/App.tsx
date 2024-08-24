@@ -3,9 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import Particles from "./components/three/Particles";
 import CameraController from "./components/three/CameraController";
 import styled from "styled-components";
-import Section from "./components/common/Section";
 import Navigator from "./components/common/Navigator";
-import { sectionList } from "./constants";
 import AboutSection from "./components/\bSection/About";
 
 function App() {
