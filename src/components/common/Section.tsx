@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
+import { colors } from "../../constants";
 
 interface SectionProps {
   id: string;
@@ -25,7 +26,7 @@ const Styled = {
   Section: styled.section`
     padding: 50px 0;
     min-height: 100vh;
-    color: white;
+    color: ${colors.WHITE};
     margin-top: 76px;
     padding: 20px;
     min-height: 100vh;
