@@ -4,7 +4,8 @@ import Particles from "./components/three/Particles";
 import CameraController from "./components/three/CameraController";
 import styled from "styled-components";
 import Navigator from "./components/common/Navigator";
-import AboutSection from "./components/\bSection/About";
+import AboutSection from "./components/Section/About";
+import { colors } from "./constants";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
 
 const Styled = {
   Background: styled.div`
-    background-color: #000;
+    background-color: ${colors.BLACK};
     position: fixed;
     top: 0;
     width: 100vw;
