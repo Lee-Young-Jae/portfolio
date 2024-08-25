@@ -124,4 +124,6 @@ table {
 }
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff40 #000000;
 }

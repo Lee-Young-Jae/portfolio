@@ -5,14 +5,16 @@ import { colors } from "../../constants";
 interface SectionProps {
   id: string;
   title?: string;
+  subtitle?: string;
   children?: ReactNode;
 }
 
-const Section = ({ id, title, children }: SectionProps) => {
+const Section = ({ id, title, subtitle, children }: SectionProps) => {
   return (
     <Styled.SectionContainer id={id}>
       <Styled.Section>
-        <Styled.Title>{title}</Styled.Title>
+        {title && <Styled.Title>{title}</Styled.Title>}
+        {subtitle && <Styled.Subtitle>{subtitle}</Styled.Subtitle>}
         {children}
       </Styled.Section>
     </Styled.SectionContainer>
@@ -24,16 +26,22 @@ const Styled = {
     margin-top: 76px;
   `,
   Section: styled.section`
-    padding: 50px 0;
-    min-height: 100vh;
-    color: ${colors.WHITE};
     margin-top: 76px;
     padding: 20px;
-    min-height: 100vh;
+    min-height: calc(100vh - 76px - 76px);
+    color: ${colors.WHITE};
   `,
   Title: styled.h2`
-    font-size: 36px;
-    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+  `,
+  Subtitle: styled.h3`
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
   `,
 };
 
