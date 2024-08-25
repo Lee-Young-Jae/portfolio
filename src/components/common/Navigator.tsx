@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { sectionPaths } from "../../constants";
+import { colors, sectionPaths } from "../../constants";
 
 const Navigator = () => {
   return (
@@ -21,12 +21,18 @@ const Styled = {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
+    z-index: 1000;
   `,
   Link: styled.a`
     text-decoration: none;
-    color: white;
+    color: ${colors.WHITE};
     margin: 0 20px;
     font-size: 20px;
+
+    &:hover {
+      color: ${colors.MINT};
+      text-shadow: 0 0 1px ${colors.WHITE};
+    }
   `,
 };
 

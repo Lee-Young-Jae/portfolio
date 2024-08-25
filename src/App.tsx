@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Navigator from "./components/common/Navigator";
 import AboutSection from "./components/Section/About";
 import { colors } from "./constants";
+import ProjectSection from "./components/Section/Projects";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Navigator />
       <Styled.Sections>
         <AboutSection />
+        <ProjectSection />
       </Styled.Sections>
     </div>
   );

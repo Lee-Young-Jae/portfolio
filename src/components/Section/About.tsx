@@ -1,10 +1,15 @@
 import Section from "../common/Section";
 import styled from "styled-components";
 import { colors } from "../../constants";
+import profile from "../../assets/me_profile.jpeg";
 
 const AboutSection = () => {
   return (
     <Section id="about">
+      <Styled.ImageWrapper>
+        <Styled.Profile src={profile} alt="profile" />
+      </Styled.ImageWrapper>
+
       <Styled.Title>안녕, 세상! 🙋</Styled.Title>
       <Styled.Title>
         <Styled.Strong>
@@ -20,11 +25,18 @@ const AboutSection = () => {
         저의 경험과 지식을 통해 훌륭한 동료들과 함께 성장하고, 새로운 도전을
         함께 하고 싶습니다.
       </Styled.Paragraph>
+
       <Styled.LinkContainer>
         <Styled.Link href="https://github.com/Lee-Young-Jae" target="_blank">
           GitHub
         </Styled.Link>
         <Styled.Link href="mailto: ori_@kakao.com">Email</Styled.Link>
+        <Styled.Link
+          href="https://www.instagram.com/snake_case_style"
+          target="_blank"
+        >
+          Instagram
+        </Styled.Link>
       </Styled.LinkContainer>
     </Section>
   );
@@ -42,15 +54,32 @@ const Styled = {
   Strong: styled.strong`
     color: ${colors.MINT};
   `,
-  LinkContainer: styled.div`
+
+  ImageWrapper: styled.div`
     display: flex;
     justify-content: center;
+    border-radius: 50%;
+    border: 1px solid ${colors.MINT};
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.7);
+    width: 164px;
+    height: 164px;
+    opacity: 0.7;
+    margin-bottom: 52px;
+  `,
+  Profile: styled.img`
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  `,
+  LinkContainer: styled.div`
+    margin-top: 20px;
   `,
   Link: styled.a`
     text-decoration: none;
     color: ${colors.MINT};
     font-size: 18px;
-    margin: 0 10px;
+    margin-right: 20px;
   `,
 };
 
