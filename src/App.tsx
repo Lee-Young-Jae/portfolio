@@ -1,12 +1,14 @@
 import "./App.css";
 import { Canvas } from "@react-three/fiber";
+import styled from "styled-components";
+
 import Particles from "./components/three/Particles";
 import CameraController from "./components/three/CameraController";
-import styled from "styled-components";
 import Navigator from "./components/common/Navigator";
-import AboutSection from "./components/Section/About";
+import AboutSection from "./components/section/About";
+import ProjectSection from "./components/section/Projects";
+import ExperienceSection from "./components/section/Experience";
 import { colors } from "./constants";
-import ProjectSection from "./components/Section/Projects";
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
       <Styled.Sections>
         <AboutSection />
         <ProjectSection />
+        <ExperienceSection />
       </Styled.Sections>
     </div>
   );

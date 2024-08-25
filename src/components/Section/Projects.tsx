@@ -6,7 +6,7 @@ const ProjectsSection = () => {
   return (
     <Section
       title="Projects"
-      id={sectionList.projects}
+      id={sectionList.PROJECTS}
       subtitle="주요 프로젝트"
     >
       <Styled.ProjectContainer>
@@ -54,7 +54,7 @@ const ProjectsSection = () => {
             <Styled.ProjectLink
               href="https://moim.monggeul.online"
               target="_blank"
-              isActive={false}
+              $isActive={false}
             >
               https://moim.monggeul.online
             </Styled.ProjectLink>
@@ -76,7 +76,7 @@ const ProjectsSection = () => {
             <Styled.ProjectLink
               href="https://darf-firebase.web.app"
               target="_blank"
-              isActive={false}
+              $isActive={false}
             >
               https://darf-firebase.web.app
             </Styled.ProjectLink>
@@ -96,10 +96,12 @@ const ProjectsSection = () => {
             똑똑한 냉장고 관리 비서, 내 냉장고를 부탁해
           </Styled.ProjectTitle>
           <Styled.LinkWrapper>
-            <Styled.ProjectLink href="" target="_blank" isActive={false}>
+            <Styled.ProjectLink href="" target="_blank" $isActive={false}>
               https://tcom-refrigerator.vercel.app
             </Styled.ProjectLink>
-            <Styled.LinkDescription>(서비스 종료)</Styled.LinkDescription>
+            <Styled.LinkDescription>
+              (23.06.02 서비스 종료)
+            </Styled.LinkDescription>
           </Styled.LinkWrapper>
           <Styled.ProjectDetail>
             냉장고에 있는 재료를 등록하고, 레시피를 추천받을 수 있는
@@ -154,20 +156,19 @@ const Styled = {
     margin-top: 10px;
   `,
 
-  ProjectLink: styled.a<{ isActive?: boolean }>`
+  ProjectLink: styled.a<{ $isActive?: boolean }>`
     text-decoration: none;
-    color: ${({ isActive = true }) => {
-      return isActive ? colors.MINT : colors.GRAY_500;
+    color: ${({ $isActive = true }) => {
+      return $isActive ? colors.MINT_700 : colors.GRAY_500;
     }};
-    cursor: ${({ isActive = true }) => {
-      console.log(isActive);
-      return isActive ? "pointer" : "not-allowed";
+    cursor: ${({ $isActive = true }) => {
+      return $isActive ? "pointer" : "not-allowed";
     }};
-    pointer-events: ${({ isActive = true }) => {
-      return isActive ? "auto" : "none";
+    pointer-events: ${({ $isActive = true }) => {
+      return $isActive ? "auto" : "none";
     }};
-    text-decoration: ${({ isActive = true }) => {
-      return isActive ? "none" : "line-through";
+    text-decoration: ${({ $isActive = true }) => {
+      return $isActive ? "none" : "line-through";
     }};
 
     font-size: 18px;
@@ -183,8 +184,8 @@ const Styled = {
     padding: 10px 20px;
     border-radius: 10px;
     background-color: initial;
-    border: 1px solid ${colors.MINT};
-    color: ${colors.MINT};
+    border: 1px solid ${colors.MINT_700};
+    color: ${colors.MINT_700};
     font-size: 18px;
     cursor: pointer;
 

@@ -1,11 +1,11 @@
 import Section from "../common/Section";
 import styled from "styled-components";
-import { colors } from "../../constants";
+import { colors, sectionList } from "../../constants";
 import profile from "../../assets/me_profile.jpeg";
 
 const AboutSection = () => {
   return (
-    <Section id="about">
+    <Section id={sectionList.ABOUT}>
       <Styled.ImageWrapper>
         <Styled.Profile src={profile} alt="profile" />
       </Styled.ImageWrapper>
@@ -52,14 +52,14 @@ const Styled = {
     margin-bottom: 20px;
   `,
   Strong: styled.strong`
-    color: ${colors.MINT};
+    color: ${colors.MINT_700};
   `,
 
   ImageWrapper: styled.div`
     display: flex;
     justify-content: center;
     border-radius: 50%;
-    border: 1px solid ${colors.MINT};
+    border: 1px solid ${colors.MINT_700};
     box-shadow: 0 0 10px rgba(100, 255, 218, 0.7);
     width: 164px;
     height: 164px;
@@ -77,7 +77,7 @@ const Styled = {
   `,
   Link: styled.a`
     text-decoration: none;
-    color: ${colors.MINT};
+    color: ${colors.MINT_700};
     font-size: 18px;
     margin-right: 20px;
   `,
