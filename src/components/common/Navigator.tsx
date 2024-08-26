@@ -28,6 +28,9 @@ const Styled = {
     color: ${colors.WHITE};
     margin: 0 20px;
     font-size: 20px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
 
     &:hover {
       color: ${colors.MINT_700};

@@ -80,6 +80,7 @@ const Styled = {
     color: ${colors.MINT_700};
     font-size: 18px;
     margin-right: 20px;
+    word-break: break-all;
   `,
 };
 
