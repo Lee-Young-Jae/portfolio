@@ -4,9 +4,9 @@ import { colors, sectionPaths } from "../../constants";
 const Navigator = () => {
   return (
     <Styled.Navigator>
-      <Styled.Link href={sectionPaths.about}>About</Styled.Link>
-      <Styled.Link href={sectionPaths.projects}>Projects</Styled.Link>
-      <Styled.Link href={sectionPaths.contact}>Contact</Styled.Link>
+      <Styled.Link href={sectionPaths.ABOUT}>About</Styled.Link>
+      <Styled.Link href={sectionPaths.PROJECTS}>Projects</Styled.Link>
+      <Styled.Link href={sectionPaths.EXPERIENCE}>Experience</Styled.Link>
     </Styled.Navigator>
   );
 };
@@ -28,9 +28,12 @@ const Styled = {
     color: ${colors.WHITE};
     margin: 0 20px;
     font-size: 20px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
 
     &:hover {
-      color: ${colors.MINT};
+      color: ${colors.MINT_700};
       text-shadow: 0 0 1px ${colors.WHITE};
     }
   `,

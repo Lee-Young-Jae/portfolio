@@ -6,7 +6,7 @@ const ProjectsSection = () => {
   return (
     <Section
       title="Projects"
-      id={sectionList.projects}
+      id={sectionList.PROJECTS}
       subtitle="주요 프로젝트"
     >
       <Styled.ProjectContainer>
@@ -54,7 +54,7 @@ const ProjectsSection = () => {
             <Styled.ProjectLink
               href="https://moim.monggeul.online"
               target="_blank"
-              isActive={false}
+              $isActive={false}
             >
               https://moim.monggeul.online
             </Styled.ProjectLink>
@@ -65,8 +65,8 @@ const ProjectsSection = () => {
           <Styled.ProjectDetail>
             "프로젝트 몽글"은 여러개의 소모임을 관리함에 한계를 느끼고 제작한
             모임 관리 웹 서비스입니다. 사용자는 모임을 생성하고 관리할 수
-            있으며, 모임 일정, 공지사항, 멤버 관리 등을 효율적으로 할 수
-            있습니다.
+            있으며, 모임 일정, 투표, 실시간 채팅 등을 통해 모임 관리를
+            효율적으로 할 수 있습니다.
           </Styled.ProjectDetail>
           <Styled.ModalTrigger>자세히 보기</Styled.ModalTrigger>
         </Styled.ProjectCard>
@@ -76,7 +76,7 @@ const ProjectsSection = () => {
             <Styled.ProjectLink
               href="https://darf-firebase.web.app"
               target="_blank"
-              isActive={false}
+              $isActive={false}
             >
               https://darf-firebase.web.app
             </Styled.ProjectLink>
@@ -87,7 +87,8 @@ const ProjectsSection = () => {
           <Styled.ProjectDetail>
             KKU 졸업 프로젝트로 진행한 식단 관리 서비스입니다. 사용자는 식단을
             등록하고, 다른 사용자의 식단을 참고할 수 있습니다. 또한, 식단을
-            통계로 확인하고, 다이어트에 도움이 되는 정보를 얻을 수 있습니다.
+            통계로 확인하고, 칼로리 정보와 같이 다이어트에 도움이 되는 정보를
+            얻을 수 있습니다.
           </Styled.ProjectDetail>
           <Styled.ModalTrigger>자세히 보기</Styled.ModalTrigger>
         </Styled.ProjectCard>
@@ -96,10 +97,12 @@ const ProjectsSection = () => {
             똑똑한 냉장고 관리 비서, 내 냉장고를 부탁해
           </Styled.ProjectTitle>
           <Styled.LinkWrapper>
-            <Styled.ProjectLink href="" target="_blank" isActive={false}>
+            <Styled.ProjectLink href="" target="_blank" $isActive={false}>
               https://tcom-refrigerator.vercel.app
             </Styled.ProjectLink>
-            <Styled.LinkDescription>(서비스 종료)</Styled.LinkDescription>
+            <Styled.LinkDescription>
+              (23.06.02 서비스 종료)
+            </Styled.LinkDescription>
           </Styled.LinkWrapper>
           <Styled.ProjectDetail>
             냉장고에 있는 재료를 등록하고, 레시피를 추천받을 수 있는
@@ -152,25 +155,27 @@ const Styled = {
     align-items: end;
     gap: 6px;
     margin-top: 10px;
+    flex-wrap: wrap;
   `,
 
-  ProjectLink: styled.a<{ isActive?: boolean }>`
+  ProjectLink: styled.a<{ $isActive?: boolean }>`
     text-decoration: none;
-    color: ${({ isActive = true }) => {
-      return isActive ? colors.MINT : colors.GRAY_500;
+    word-break: break-all;
+
+    color: ${({ $isActive = true }) => {
+      return $isActive ? colors.MINT_700 : colors.GRAY_500;
     }};
-    cursor: ${({ isActive = true }) => {
-      console.log(isActive);
-      return isActive ? "pointer" : "not-allowed";
+    cursor: ${({ $isActive = true }) => {
+      return $isActive ? "pointer" : "not-allowed";
     }};
-    pointer-events: ${({ isActive = true }) => {
-      return isActive ? "auto" : "none";
+    pointer-events: ${({ $isActive = true }) => {
+      return $isActive ? "auto" : "none";
     }};
-    text-decoration: ${({ isActive = true }) => {
-      return isActive ? "none" : "line-through";
+    text-decoration: ${({ $isActive = true }) => {
+      return $isActive ? "none" : "line-through";
     }};
 
-    font-size: 18px;
+    font-size: 16px;
   `,
 
   LinkDescription: styled.sub`
@@ -183,8 +188,8 @@ const Styled = {
     padding: 10px 20px;
     border-radius: 10px;
     background-color: initial;
-    border: 1px solid ${colors.MINT};
-    color: ${colors.MINT};
+    border: 1px solid ${colors.MINT_700};
+    color: ${colors.MINT_700};
     font-size: 18px;
     cursor: pointer;
 
