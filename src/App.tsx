@@ -25,6 +25,7 @@ function App() {
         <ProjectSection />
         <ExperienceSection />
       </Styled.Sections>
+      <div id="modalRoot" />
     </div>
   );
 }
