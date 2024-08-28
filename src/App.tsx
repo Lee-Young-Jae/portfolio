@@ -6,7 +6,7 @@ import Particles from "./components/three/Particles";
 import CameraController from "./components/three/CameraController";
 import Navigator from "./components/common/Navigator";
 import AboutSection from "./components/section/About";
-import ProjectSection from "./components/section/Projects";
+import ProjectSection from "./components/section/projects/ProjectSection";
 import ExperienceSection from "./components/section/Experience";
 import { colors } from "./constants";
 
