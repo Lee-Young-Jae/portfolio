@@ -4,7 +4,7 @@ import Modal from "../common/Modal";
 import styled from "styled-components";
 
 interface ModalTriggerProps {
-  title: string;
+  title?: string;
   children: React.ReactNode;
 }
 
