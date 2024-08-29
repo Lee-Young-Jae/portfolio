@@ -71,45 +71,47 @@ const ModalContent = ({ children }: ModalContentProps) => {
 Modal.Header = ModalHeader;
 Modal.Content = ModalContent;
 
-const fadeInAndSlideUp = keyframes`
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-`;
+const ModalAnimation = {
+  fadeInAndSlideUp: keyframes`
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  `,
 
-const fadeOutAndSlideDown = keyframes`
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-`;
+  fadeOutAndSlideDown: keyframes`
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  `,
 
-const backdropFadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
+  backdropFadeIn: keyframes`
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  `,
 
-const backdropFadeOut = keyframes`
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-`;
+  backdropFadeOut: keyframes`
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  `,
+};
 
 const Styled = {
   Modal: styled.div<{ $isAnimating?: boolean; $opened?: boolean }>`
@@ -125,9 +127,9 @@ const Styled = {
 
     animation: ${({ $isAnimating, $opened }) => {
       if ($isAnimating) {
-        return $opened ? backdropFadeOut : "none";
+        return $opened ? ModalAnimation.backdropFadeOut : "none";
       }
-      return backdropFadeIn;
+      return ModalAnimation.backdropFadeIn;
     }};
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
@@ -160,9 +162,9 @@ const Styled = {
     scrollbar-width: none;
     animation: ${({ $isAnimating, $opened }) => {
       if ($isAnimating) {
-        return $opened ? fadeOutAndSlideDown : "none";
+        return $opened ? ModalAnimation.fadeOutAndSlideDown : "none";
       }
-      return fadeInAndSlideUp;
+      return ModalAnimation.fadeInAndSlideUp;
     }};
     animation-duration: 0.3s;
   `,
