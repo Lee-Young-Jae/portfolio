@@ -1,7 +1,6 @@
 import { useCallback, useMemo, useState } from "react";
 import styled from "styled-components";
 import { colors } from "../../constants";
-import previewImage from "../../assets/preview.svg";
 
 interface CarouselProps {
   images: { src: string; alt: string }[];
@@ -123,10 +122,11 @@ const Styled = {
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
       opacity: ${(props) => (props.$index === props.$currentIndex ? 1 : 0.5)};
-
+      filter: ${(props) =>
+        props.$index === props.$currentIndex ? "none" : "grayscale(70%)"};
       transition: scale 0.3s;
       &:hover {
-        scale: 1.05;
+        scale: 1.03;
       }
     }
   `,
