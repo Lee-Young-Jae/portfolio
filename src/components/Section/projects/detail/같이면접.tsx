@@ -8,7 +8,18 @@ const 같이면접 = () => {
       <Styled.Header>
         <Styled.Title>가상 면접 AI 피드백 서비스, 같이면접</Styled.Title>
         <Styled.Date>2024년 03월 ~ 2024년 06월</Styled.Date>
-
+        {/* <Styled.SectionTitle>서비스 미리보기</Styled.SectionTitle> */}
+        {/* <iframe
+          width="931"
+          height="713"
+          src="https://www.youtube.com/embed/shGYiXcWYn0"
+          title="[같이면접] 모의면접 연습 서비스"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          // frameborder="0"
+          // referrerpolicy="strict-origin-when-cross-origin"
+          // allowfullscreen
+        ></iframe> */}
+        <Carousel images={Object.values(projectImages.같이면접)} />
         <Styled.LinkContainer>
           서비스 링크:
           <Styled.Link
@@ -28,6 +39,16 @@ const 같이면접 = () => {
             rel="noreferrer"
           >
             https://github.com/Lee-Young-Jae/gachi-interview-FE
+          </Styled.Link>
+        </Styled.LinkContainer>
+        <Styled.LinkContainer>
+          시연 영상:
+          <Styled.Link
+            href="https://www.youtube.com/embed/shGYiXcWYn0"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://www.youtube.com/embed/shGYiXcWYn0
           </Styled.Link>
         </Styled.LinkContainer>
       </Styled.Header>
@@ -186,20 +207,6 @@ const 같이면접 = () => {
             </Styled.TechItem>
           </Styled.SubSection>
         </Styled.Section>
-      </Styled.Section>
-      <Styled.Section>
-        <Styled.SectionTitle>서비스 미리보기</Styled.SectionTitle>
-        {/* <iframe
-          width="931"
-          height="713"
-          src="https://www.youtube.com/embed/shGYiXcWYn0"
-          title="[같이면접] 모의면접 연습 서비스"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          // frameborder="0"
-          // referrerpolicy="strict-origin-when-cross-origin"
-          // allowfullscreen
-        ></iframe> */}
-        <Carousel images={Object.values(projectImages.같이면접)} />
       </Styled.Section>
     </Styled.Article>
   );
