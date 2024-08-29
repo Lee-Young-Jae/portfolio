@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { colors } from "../../../../constants";
+import { colors, projectImages } from "../../../../constants";
+import Carousel from "../../../common/Carousel";
 
 const 같이면접 = () => {
   return (
@@ -108,15 +109,17 @@ const 같이면접 = () => {
             <Styled.Paragraph>
               기존 백엔드 개발자가 맡아 진행하던 AI 피드백 로직은 다음과 같이
               구현되어 있었습니다:
-              <Styled.List>
-                <Styled.ListItem>
-                  영상의 S3 업로드 이벤트를 트리거로 하여 AWS Lambda에서 실행
-                </Styled.ListItem>
-                <Styled.ListItem>
-                  영상에서 텍스트를 추출하고 LLM Services를 이용해 AI 피드백을
-                  반환
-                </Styled.ListItem>
-              </Styled.List>
+            </Styled.Paragraph>
+            <Styled.List>
+              <Styled.ListItem>
+                영상의 S3 업로드 이벤트를 트리거로 하여 AWS Lambda에서 실행
+              </Styled.ListItem>
+              <Styled.ListItem>
+                영상에서 텍스트를 추출하고 LLM Services를 이용해 AI 피드백을
+                반환
+              </Styled.ListItem>
+            </Styled.List>
+            <Styled.Paragraph>
               그러나 Lambda의 최대 실행 시간은 15분으로 제한되어 있었고,
               서비스의 실행 시간이 이 제한을 초과하는 경우가 간헐적으로
               발생하였습니다. 이로 인해 Lambda 함수가 실패하거나 중단되는 문제가
@@ -184,6 +187,20 @@ const 같이면접 = () => {
           </Styled.SubSection>
         </Styled.Section>
       </Styled.Section>
+      <Styled.Section>
+        <Styled.SectionTitle>서비스 미리보기</Styled.SectionTitle>
+        {/* <iframe
+          width="931"
+          height="713"
+          src="https://www.youtube.com/embed/shGYiXcWYn0"
+          title="[같이면접] 모의면접 연습 서비스"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          // frameborder="0"
+          // referrerpolicy="strict-origin-when-cross-origin"
+          // allowfullscreen
+        ></iframe> */}
+        <Carousel images={Object.values(projectImages.같이면접)} />
+      </Styled.Section>
     </Styled.Article>
   );
 };
@@ -230,7 +247,7 @@ const Styled = {
     color: ${colors.MINT_500};
   `,
   SubSection: styled.div`
-    margin-bottom: 16px;
+    margin-bottom: 32px;
   `,
   SubTitle: styled.h4`
     font-size: 18px;
@@ -240,7 +257,6 @@ const Styled = {
   Paragraph: styled.p`
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 28px;
   `,
   SkillList: styled.ul`
     display: flex;
