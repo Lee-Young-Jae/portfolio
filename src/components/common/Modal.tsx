@@ -51,7 +51,7 @@ interface ModalHeaderProps {
   hide?: () => void;
 }
 
-const ModalHeader = ({ children, title, hide }: ModalHeaderProps) => {
+const ModalHeader = ({ children, title }: ModalHeaderProps) => {
   return (
     <Styled.ModalHeader>
       <div>{title}</div>
