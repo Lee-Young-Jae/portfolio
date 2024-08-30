@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { colors, sectionList } from "../../../constants";
 import Section from "../../common/Section";
 import ModalTrigger from "../../common/ModalTrigger";
-import 같이면접 from "./detail/같이면접";
+import 같이면접 from "./modal/같이면접";
+import SafetyWatch from "./modal/SafetyWatch";
 
 const ProjectsSection = () => {
   return (
@@ -50,13 +51,8 @@ const ProjectsSection = () => {
             현장에서 발생한 중대 재해 상황을 확인하고 관련된 KOSHA 예방 지침을
             제공합니다. 또한, 키워드를 통한 지침/법령 검색 기능을 제공합니다.
           </Styled.ProjectDetail>
-          <ModalTrigger title="같이면접">
-            <p>
-              같이면접은 모의 면접을 보고, AI 피드백을 받을 수 있는
-              서비스입니다. 면접을 보고, AI 피드백을 받을 수 있는 서비스를
-              개발했습니다. 한 달간 매일 다른 개발자와 소통해가며 기획을
-              개선하였고 영상 처리 최적화를 통한 UX 최적화에 신경썼습니다.
-            </p>
+          <ModalTrigger>
+            <SafetyWatch />
           </ModalTrigger>
         </Styled.ProjectCard>
         <Styled.ProjectCard>
