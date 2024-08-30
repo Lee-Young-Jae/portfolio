@@ -6,14 +6,21 @@ import styled from "styled-components";
 interface ModalTriggerProps {
   title?: string;
   children: React.ReactNode;
+  trigger?: React.ReactNode;
 }
 
-const ModalTrigger = ({ title, children }: ModalTriggerProps) => {
+const ModalTrigger = ({ title, children, trigger }: ModalTriggerProps) => {
   const { openModal, opened, closeModal, isAnimating } = useModal();
 
   return (
     <div>
-      <Styled.ModalTrigger onClick={openModal}>자세히 보기</Styled.ModalTrigger>
+      {trigger ? (
+        <div onClick={openModal}>{trigger}</div>
+      ) : (
+        <Styled.ModalTrigger onClick={openModal}>
+          자세히 보기
+        </Styled.ModalTrigger>
+      )}
       <Modal opened={opened} hide={closeModal} isAnimating={isAnimating}>
         <Modal.Header title={title} hide={closeModal} />
         <Modal.Content>{children}</Modal.Content>
