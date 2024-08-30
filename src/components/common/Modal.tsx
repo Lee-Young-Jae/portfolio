@@ -120,6 +120,7 @@ const Styled = {
     left: 0;
     width: 100vw;
     height: 100vh;
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
@@ -148,6 +149,7 @@ const Styled = {
 
   ModalInner: styled.div<{ $isAnimating?: boolean; $opened?: boolean }>`
     position: relative;
+    -webket-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(30, 41, 73, 0.5);
     border-radius: 10px;

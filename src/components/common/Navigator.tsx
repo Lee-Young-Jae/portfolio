@@ -17,6 +17,7 @@ const Styled = {
     top: 0;
     width: 100dvw;
     height: 76px;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
