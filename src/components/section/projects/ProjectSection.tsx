@@ -4,6 +4,7 @@ import Section from "../../common/Section";
 import ModalTrigger from "../../common/ModalTrigger";
 import 같이면접 from "./modal/같이면접";
 import SafetyWatch from "./modal/SafetyWatch";
+import MonggeulMonggeul from "./modal/몽글몽글";
 
 const ProjectsSection = () => {
   return (
@@ -75,7 +76,9 @@ const ProjectsSection = () => {
             있으며, 모임 일정, 투표, 실시간 채팅 등을 통해 모임 관리를
             효율적으로 할 수 있습니다.
           </Styled.ProjectDetail>
-          <Styled.ModalTrigger>자세히 보기</Styled.ModalTrigger>
+          <ModalTrigger>
+            <MonggeulMonggeul />
+          </ModalTrigger>
         </Styled.ProjectCard>
         <Styled.ProjectCard>
           <Styled.ProjectTitle>함께하는 다이어트, Darf</Styled.ProjectTitle>
