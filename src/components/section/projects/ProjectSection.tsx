@@ -137,6 +137,7 @@ const Styled = {
   ProjectCard: styled.div`
     display: flex;
     flex-wrap: wrap;
+    -webkit-backdrop-filter: blur(0.5px);
     backdrop-filter: blur(0.5px);
     background-color: rgba(30, 41, 73, 0.5);
     border-radius: 10px;
