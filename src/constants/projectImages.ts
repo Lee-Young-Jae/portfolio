@@ -47,6 +47,52 @@ const projectImages = {
       alt: "error 화면",
     },
   ],
+  MONGGEUL_MONGGEUL: [
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F250af7ff-4927-4363-ba3f-4c85a720458d%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.03.59.png?table=block&id=308c6bb8-6b9a-4490-9323-e1eacb13c9ce&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=2000&userId=&cache=v2",
+      alt: "몽글몽글 랜딩 페이지",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2Fdfe528ad-30d3-4cec-af5a-19da01dab28d%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.04.41.png?table=block&id=558ffc3d-47e0-4427-aea0-0ef2eec106b8&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1410&userId=&cache=v2",
+      alt: "몽글몽글 마이페이지",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F9952d98e-b505-4cc0-ba22-666d5a675b74%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.05.09.png?table=block&id=ba226a02-9e25-436b-9053-eb76401ec3aa&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=2000&userId=&cache=v2",
+      alt: "모임 투표 생성",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2Fcdeff9aa-4af7-483a-acd1-87ceeeed026e%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.08.23.png?table=block&id=35fcfcd3-dbb0-40f0-a87c-b457e86abb97&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=2000&userId=&cache=v2",
+      alt: "모임 투표 진행",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F4cb31165-a3ef-4fe1-8767-36c9d6a3024a%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.08.33.png?table=block&id=d7b71524-d4d0-45ad-8517-6c0604043358&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1410&userId=&cache=v2",
+      alt: "모임 투표 결과",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F464d6dd5-54ce-450c-8660-69a3d4d3b59a%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.11.53.png?table=block&id=a9cc2bd9-c831-4ea7-9ad5-65b483d7a11d&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1410&userId=&cache=v2",
+      alt: "모임 약속 잡기",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2Fe1e7bde8-6465-4272-bb63-ed92751b5279%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.12.17.png?table=block&id=9f3db577-249b-45fb-a50a-623a3a2f8b12&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=2000&userId=&cache=v2",
+      alt: "모임 약속 잡기 목록",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2Fa9716265-f7ca-46cf-b3a1-1483beae1a4a%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.13.05.png?table=block&id=427a194e-ba46-467f-ab7c-205aa117d48f&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1410&userId=&cache=v2",
+      alt: "모임 약속 잡기 결과",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F4de9f8f7-f8b3-4950-aaa9-e0666f71c24b%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.14.12.png?table=block&id=a9ab7abf-d867-40c8-aa5f-d63084e516d6&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=2000&userId=&cache=v2",
+      alt: "모임 채팅",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2Fd237727b-df12-4697-980d-f944592d9173%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.14.42.png?table=block&id=bd6a1e3b-1ac3-4e63-800f-87079019908e&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=2000&userId=&cache=v2",
+      alt: "모임 초대코드 생성",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2Ff6cca077-ae1e-4506-be9d-d676302342c6%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.15.35.png?table=block&id=3fb8a56f-c360-42b3-a531-14c28a3e69bf&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1410&userId=&cache=v2",
+      alt: "모임 초대코드 입력",
+    },
+  ],
 } as const;
 
 export { projectImages };

@@ -13,8 +13,7 @@ const Carousel = ({ images }: CarouselProps) => {
 
   const { $theta, $radius } = useMemo(() => {
     const $theta = 360 / images.length;
-    // const $radius = 200 / (2 * Math.tan(Math.PI / images.length));
-    const $radius = 500;
+    const $radius = 250 / Math.tan(Math.PI / images.length);
 
     return { $theta, $radius };
   }, [images]);
@@ -104,7 +103,7 @@ const Styled = {
     top: 50%;
     left: 50%;
     transform-origin: center center;
-    width: 500px;
+    width: 400px;
     height: 450px;
     margin: 0;
     padding: 0;
