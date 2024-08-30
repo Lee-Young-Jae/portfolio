@@ -104,7 +104,7 @@ const Styled = {
     top: 50%;
     left: 50%;
     transform-origin: center center;
-    width: 300px;
+    width: 500px;
     height: 450px;
     margin: 0;
     padding: 0;
