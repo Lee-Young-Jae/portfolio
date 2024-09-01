@@ -23,13 +23,17 @@ const Section = ({ id, title, subtitle, children }: SectionProps) => {
 
 const Styled = {
   SectionContainer: styled.div`
-    margin-top: 76px;
+    /* margin-top: 76px; */
   `,
   Section: styled.section`
     margin-top: 76px;
     padding: 20px;
     min-height: calc(100vh - 76px - 76px);
     color: ${colors.WHITE};
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   `,
   Title: styled.h2`
     font-size: 1.5rem;

@@ -93,6 +93,28 @@ const projectImages = {
       alt: "모임 초대코드 입력",
     },
   ],
+  DARF: [
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F71c923a3-4f92-47b2-96c5-a5a096aa96e2%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-09-01_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_3.15.51.png?table=block&id=daa8a218-d5b4-42b6-b68c-d18841ddcb97&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=2000&userId=&cache=v2",
+      alt: "DARF 그룹 페이지",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2Fbf63f161-fa90-434e-8b99-ac68de45d0ae%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-09-01_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_3.16.14.png?table=block&id=55934eb7-898b-4522-a207-2bbd4000eeb8&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=2000&userId=&cache=v2",
+      alt: "그룹 기록 페이지",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F56e0ac02-000d-4120-a5f4-4ca31d95b1e5%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-09-01_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_3.17.18.png?table=block&id=b979c66d-d5cd-4287-a922-1b6681df1e49&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=2000&userId=&cache=v2",
+      alt: "식단 기록 입력",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F67811dc8-c6d7-451f-a8de-aee0156fb29a%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-09-01_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_3.17.43.png?table=block&id=a73b73a6-e67d-4c1a-a3ec-b28ec9837cf7&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=2000&userId=&cache=v2",
+      alt: "식단 기록 삭제",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F90379b84-eb55-4762-82d2-3dc065b7c043%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-09-01_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_3.18.36.png?table=block&id=1f175440-c8b9-4cc4-8f4f-59bb73de9c63&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=2000&userId=&cache=v2",
+      alt: "마이페이지",
+    },
+  ],
 } as const;
 
 export { projectImages };
