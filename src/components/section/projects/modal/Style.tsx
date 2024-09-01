@@ -104,6 +104,12 @@ const Styled = {
     font-size: 14px;
     margin: 0 4px;
   `,
+
+  VideoLink: styled.a`
+    display: block;
+    margin-top: 16px;
+    font-size: 16px;
+  `,
 };
 
 export default Styled;
