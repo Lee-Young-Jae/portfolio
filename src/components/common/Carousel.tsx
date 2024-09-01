@@ -135,12 +135,12 @@ const Styled = {
     top: 50%;
     width: 16px;
     height: 16px;
-    border-radius: 50%;
     border: none;
     cursor: pointer;
     opacity: 0.7;
     transition: opacity 0.3s;
     background-color: transparent;
+    z-index: 1;
 
     &:hover {
       opacity: 1;

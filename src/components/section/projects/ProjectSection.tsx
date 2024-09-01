@@ -5,6 +5,7 @@ import ModalTrigger from "../../common/ModalTrigger";
 import 같이면접 from "./modal/같이면접";
 import SafetyWatch from "./modal/SafetyWatch";
 import MonggeulMonggeul from "./modal/몽글몽글";
+import Darf from "./modal/Darf";
 
 const ProjectsSection = () => {
   return (
@@ -100,7 +101,9 @@ const ProjectsSection = () => {
             통계로 확인하고, 칼로리 정보와 같이 다이어트에 도움이 되는 정보를
             얻을 수 있습니다.
           </Styled.ProjectDetail>
-          <Styled.ModalTrigger>자세히 보기</Styled.ModalTrigger>
+          <ModalTrigger>
+            <Darf />
+          </ModalTrigger>
         </Styled.ProjectCard>
         <Styled.ProjectCard>
           <Styled.ProjectTitle>
