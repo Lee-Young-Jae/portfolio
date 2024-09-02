@@ -115,6 +115,28 @@ const projectImages = {
       alt: "마이페이지",
     },
   ],
+  TAKE_CARE_OF_MY_REFRIGERATOR: [
+    {
+      src: "https://user-images.githubusercontent.com/78532129/208683596-eac9561c-9fce-4717-9f45-6fda68a7c0ff.gif",
+      alt: "내 냉장고 관리",
+    },
+    {
+      src: "https://user-images.githubusercontent.com/78532129/208683642-11974775-3906-4847-887b-4113edf29627.gif",
+      alt: "내 냉장고 관리2",
+    },
+    {
+      src: "https://user-images.githubusercontent.com/78532129/208683677-6577570f-fcf5-495b-a39a-a237103f1057.gif",
+      alt: "내 냉장고 관리3",
+    },
+    {
+      src: "https://user-images.githubusercontent.com/78532129/208682823-102cf58d-6bf9-4e66-b4a2-3430f9084a23.gif",
+      alt: "장바구니",
+    },
+    {
+      src: "https://user-images.githubusercontent.com/78532129/208682521-5e1edf27-2449-4a2d-a356-7f5f9f8ee63d.gif",
+      alt: "랜딩페이지, 회원가입",
+    },
+  ],
 } as const;
 
 export { projectImages };

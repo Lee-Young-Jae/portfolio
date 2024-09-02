@@ -6,6 +6,7 @@ import 같이면접 from "./modal/같이면접";
 import SafetyWatch from "./modal/SafetyWatch";
 import MonggeulMonggeul from "./modal/몽글몽글";
 import Darf from "./modal/Darf";
+import TakeCareOfMyRefrigerator from "./modal/TakeCareOfMyRefrigerator";
 
 const ProjectsSection = () => {
   return (
@@ -122,7 +123,9 @@ const ProjectsSection = () => {
             서비스입니다. 사용자는 레시피를 찾고, 레시피를 등록할 수 있습니다.
             또한, 레시피를 통해 재료를 구매할 수 있는 기능을 제공합니다.
           </Styled.ProjectDetail>
-          <Styled.ModalTrigger>자세히 보기</Styled.ModalTrigger>
+          <ModalTrigger>
+            <TakeCareOfMyRefrigerator />
+          </ModalTrigger>
         </Styled.ProjectCard>
       </Styled.ProjectContainer>
     </Section>
