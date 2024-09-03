@@ -1,6 +1,7 @@
 import { useCallback, useMemo, useState } from "react";
 import styled from "styled-components";
 import { colors } from "../../constants";
+import ImageWithLoading from "./ImageWithLoading";
 
 interface CarouselProps {
   images: { src: string; alt: string }[];
@@ -51,7 +52,12 @@ const Carousel = ({ images }: CarouselProps) => {
             $currentIndex={currentIndex}
             onClick={() => moveTo(index)}
           >
-            <img src={image.src} alt={`carousel-${image.alt}`} />
+            <ImageWithLoading
+              src={image.src}
+              alt={`carousel-${image.alt}`}
+              width="400px"
+              height="450px"
+            />
           </Styled.Item>
         ))}
       </Styled.Container>
@@ -113,20 +119,30 @@ const Styled = {
       rotateY(${(props) => props.$theta * props.$index}deg)
       translateZ(${(props) => props.$radius}px);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+
+    border: 0.6px solid rgba(12, 120, 120, 0.7);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+
+    overflow: hidden;
+    transition: scale 0.3s;
+    &:hover {
+      scale: 1.01;
+    }
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 10px;
+      /* border-radius: 10px; */
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
       opacity: ${(props) => (props.$index === props.$currentIndex ? 1 : 0.5)};
       filter: ${(props) =>
         props.$index === props.$currentIndex ? "none" : "grayscale(70%)"};
-      transition: scale 0.3s;
-      &:hover {
-        scale: 1.03;
-      }
     }
   `,
 
