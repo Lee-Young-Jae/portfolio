@@ -1,4 +1,5 @@
 import "./App.css";
+import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import styled from "styled-components";
 
@@ -14,10 +15,12 @@ function App() {
   return (
     <div className="App">
       <Styled.Background>
-        <Styled.Canvas>
-          <Particles count={3000} />
-          <CameraController />
-        </Styled.Canvas>
+        <Suspense fallback={null}>
+          <Styled.Canvas>
+            <Particles count={3000} />
+            <CameraController />
+          </Styled.Canvas>
+        </Suspense>
       </Styled.Background>
       <Navigator />
       <Styled.Sections>
