@@ -46,6 +46,7 @@ const Styled = {
   Title: styled.h1`
     font-size: 36px;
     margin-bottom: 30px;
+    font-weight: 400;
   `,
   Paragraph: styled.p`
     font-size: 18px;
@@ -53,6 +54,7 @@ const Styled = {
   `,
   Strong: styled.strong`
     color: ${colors.MINT_700};
+    font-weight: 400;
   `,
 
   ImageWrapper: styled.div`
