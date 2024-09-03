@@ -64,10 +64,10 @@ const projectImages = {
       src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2Fcdeff9aa-4af7-483a-acd1-87ceeeed026e%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.08.23.png?table=block&id=35fcfcd3-dbb0-40f0-a87c-b457e86abb97&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=2000&userId=&cache=v2",
       alt: "모임 투표 진행",
     },
-    {
-      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F4cb31165-a3ef-4fe1-8767-36c9d6a3024a%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.08.33.png?table=block&id=d7b71524-d4d0-45ad-8517-6c0604043358&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1410&userId=&cache=v2",
-      alt: "모임 투표 결과",
-    },
+    // {
+    //   src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F4cb31165-a3ef-4fe1-8767-36c9d6a3024a%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.08.33.png?table=block&id=d7b71524-d4d0-45ad-8517-6c0604043358&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1410&userId=&cache=v2",
+    //   alt: "모임 투표 결과",
+    // },
     {
       src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F464d6dd5-54ce-450c-8660-69a3d4d3b59a%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-08-25_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.11.53.png?table=block&id=a9cc2bd9-c831-4ea7-9ad5-65b483d7a11d&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1410&userId=&cache=v2",
       alt: "모임 약속 잡기",

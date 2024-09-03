@@ -114,7 +114,7 @@ const Styled = {
     margin: 0;
     padding: 0;
     transform-style: preserve-3d;
-    transition: transform 1s, opacity 1s;
+    transition: transform 0.5s, opacity 0.5s filter 0.5s;
     transform: translate(-50%, -50%)
       rotateY(${(props) => props.$theta * props.$index}deg)
       translateZ(${(props) => props.$radius}px);
@@ -129,10 +129,6 @@ const Styled = {
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
 
     overflow: hidden;
-    transition: scale 0.3s;
-    &:hover {
-      scale: 1.01;
-    }
 
     img {
       width: 100%;
@@ -143,6 +139,15 @@ const Styled = {
       opacity: ${(props) => (props.$index === props.$currentIndex ? 1 : 0.5)};
       filter: ${(props) =>
         props.$index === props.$currentIndex ? "none" : "grayscale(70%)"};
+    }
+
+    &:hover {
+      opacity: 1;
+
+      & img {
+        filter: none;
+        opacity: 1;
+      }
     }
   `,
 
