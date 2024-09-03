@@ -37,13 +37,13 @@ const Styled = {
   `,
   Title: styled.h2`
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: "bold";
     margin-bottom: 16px;
     text-align: center;
   `,
   Subtitle: styled.h3`
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 20px;
     text-align: center;
   `,
