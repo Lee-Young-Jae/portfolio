@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-display: swap;
   font-family: "AppleSDGothicNeo";
   font-weight: 700;
@@ -11,4 +11,18 @@
   font-family: "AppleSDGothicNeo";
   font-weight: 400;
   src: url(AppleSDGothicNeoR.woff2) format("font-woff2");
+} */
+
+@font-face {
+  font-display: swap;
+  src: url(WantedSans-Regular.woff2) format("woff2");
+  font-family: "WantedSans";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  src: url(WantedSans-SemiBold.woff2) format("woff2");
+  font-family: "WantedSans";
+  font-weight: 700;
 }
