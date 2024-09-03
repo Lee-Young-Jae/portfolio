@@ -1,0 +1,14 @@
+@font-face {
+  font-display: swap;
+  font-family: "AppleSDGothicNeo";
+  font-weight: 700;
+  src: url(AppleSDGothicNeoB.woff2) format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-family: "AppleSDGothicNeo";
+  font-weight: 400;
+  src: url(AppleSDGothicNeoR.woff2) format("woff2");
+}

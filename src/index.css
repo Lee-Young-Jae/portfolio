@@ -1,4 +1,10 @@
-@import url("../public/font/font.css");
+@import url("./assets/font/font.css");
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff40 #000000;
+}
 
 body {
   font-family: "AppleSDGothicNeo", sans-serif;
