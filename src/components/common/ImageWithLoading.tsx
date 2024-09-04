@@ -30,7 +30,7 @@ const ImageWithLoading = ({
         src={src}
         alt={alt}
         onLoad={() => setIsLoaded(true)}
-        isLoaded={isLoaded}
+        $isLoaded={isLoaded}
         width={width}
         height={height}
         {...props}
@@ -71,12 +71,12 @@ const Styled = {
     animation: ${Keyframes.spin} 1s linear infinite;
   `,
 
-  Image: styled.img<{ isLoaded: boolean }>`
+  Image: styled.img<{ $isLoaded: boolean }>`
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: opacity 0.5s;
-    opacity: ${({ isLoaded }) => (isLoaded ? 1 : 0)};
+    opacity: ${({ $isLoaded }) => ($isLoaded ? 1 : 0)};
   `,
 };
 
