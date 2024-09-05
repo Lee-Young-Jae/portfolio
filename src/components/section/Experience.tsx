@@ -17,7 +17,7 @@ const ExperienceSection = () => {
               2023년 03월 ~ 2023년 05월
             </Styled.ExperienceDate>
             <Styled.ExperienceTitle>
-              금융 데이터 활용 아이디어 경진대회
+              제 3회 금융 데이터 활용 아이디어 경진대회
             </Styled.ExperienceTitle>
             <Styled.ExperienceSubTitle>본선 진출</Styled.ExperienceSubTitle>
           </Styled.ExperienceDetail>
