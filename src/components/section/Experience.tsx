@@ -28,22 +28,22 @@ const ExperienceSection = () => {
             다양한 분야의 전문가들과 소통하며 만족스러운 협업을 경험했습니다.
           </Styled.ExperienceContent>
         </Styled.ExperienceTimeline>
-        {/* <Styled.ExperienceTimeline>
+        <Styled.ExperienceTimeline>
           <Styled.ExperiencePoint />
           <Styled.ExperienceDetail>
             <Styled.ExperienceDate>
               2021년 03월 ~ 2023년 02월
             </Styled.ExperienceDate>
-            <Styled.ExperienceTitle>건국대학교 GLOCAL</Styled.ExperienceTitle>
+            <Styled.ExperienceTitle>건국대학교</Styled.ExperienceTitle>
             <Styled.ExperienceSubTitle>
-              소프트웨어학 전공 (학사)
+              GLOCAL CAMPUS 소프트웨어학 전공 (학사)
             </Styled.ExperienceSubTitle>
           </Styled.ExperienceDetail>
           <Styled.ExperienceContent>
             전공 수업에서 컴퓨터 구조, 네트워크, 운영체제, 프로그래밍 언어,
             웹개발 등을 학습했습니다.
           </Styled.ExperienceContent>
-        </Styled.ExperienceTimeline> */}
+        </Styled.ExperienceTimeline>
       </Styled.ExperienceContainer>
     </Section>
   );
