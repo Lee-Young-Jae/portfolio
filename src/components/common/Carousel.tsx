@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
 import { colors } from "../../constants";
 import ImageWithLoading from "./ImageWithLoading";
@@ -9,8 +9,14 @@ interface CarouselProps {
 
 type Direction = "left" | "right";
 
+// TODO: 드래그 속도에 따라 관성 효과 주기
+// TODO: 드래그에 따라 회전하다가 멈추면 해당 이미지로 이동하는 효과도 괜찮을 듯 (구현 생각해보기)
+
 const Carousel = ({ images }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [dragDistance, setDragDistance] = useState(0);
 
   const { $theta, $radius } = useMemo(() => {
     const $theta = 360 / images.length;
@@ -36,8 +42,45 @@ const Carousel = ({ images }: CarouselProps) => {
     [currentIndex, images]
   );
 
+  const handleDragStart = (e: React.MouseEvent | React.TouchEvent) => {
+    setIsDragging(true);
+    setStartX("touches" in e ? e.touches[0].clientX : e.clientX); // touches가 있는 경우 모바일 터치
+  };
+
+  const handleDragMove = (e: React.MouseEvent | React.TouchEvent) => {
+    if (!isDragging) return;
+
+    let currentX = "touches" in e ? e.touches[0].clientX : e.clientX;
+    const distance = currentX - startX;
+    setDragDistance(distance);
+  };
+
+  const handleDragEnd = () => {
+    setIsDragging(false);
+    if (Math.abs(dragDistance) > 50) {
+      // 50px 이상 드래그한 경우
+      move(dragDistance > 0 ? "left" : "right");
+    }
+    setDragDistance(0);
+  };
+
+  useEffect(() => {
+    const handleMouseUp = () => handleDragEnd();
+    document.addEventListener("mouseup", handleMouseUp);
+    return () => {
+      document.removeEventListener("mouseup", handleMouseUp);
+    };
+  }, [handleDragEnd]);
+
   return (
-    <Styled.Carousel>
+    <Styled.Carousel
+      onMouseDown={handleDragStart}
+      onMouseMove={handleDragMove}
+      onMouseUp={handleDragEnd}
+      onTouchStart={handleDragStart}
+      onTouchMove={handleDragMove}
+      onTouchEnd={handleDragEnd}
+    >
       <Styled.Container
         $theta={$theta}
         $radius={$radius}
@@ -139,6 +182,8 @@ const Styled = {
       opacity: ${(props) => (props.$index === props.$currentIndex ? 1 : 0.5)};
       filter: ${(props) =>
         props.$index === props.$currentIndex ? "none" : "grayscale(70%)"};
+      user-select: none;
+      pointer-events: none;
     }
 
     &:hover {
