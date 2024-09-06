@@ -17,7 +17,7 @@ const Carousel = ({ images }: CarouselProps) => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [dragDistance, setDragDistance] = useState(0);
-  const [rotation, setRotation] = useState(0);
+  // const [rotation, setRotation] = useState(0); // 드래그에 따라 회전하는 효과
 
   const { $theta, $radius } = useMemo(() => {
     const $theta = 360 / images.length;
@@ -53,7 +53,7 @@ const Carousel = ({ images }: CarouselProps) => {
 
     let currentX = "touches" in e ? e.touches[0].clientX : e.clientX;
     const distance = currentX - startX;
-    setRotation(distance);
+    //  setRotation(distance);
     setDragDistance(distance);
   };
 
@@ -64,7 +64,7 @@ const Carousel = ({ images }: CarouselProps) => {
       move(dragDistance > 0 ? "left" : "right");
     }
     setDragDistance(0);
-    setRotation(0);
+    // setRotation(0);
   };
 
   useEffect(() => {
@@ -88,7 +88,7 @@ const Carousel = ({ images }: CarouselProps) => {
         $theta={$theta}
         $radius={$radius}
         $currentIndex={currentIndex}
-        $rotation={rotation}
+        // $rotation={rotation}
       >
         {images.map((image, index) => (
           <Styled.Item
@@ -130,7 +130,7 @@ const Styled = {
     $theta: number;
     $radius: number;
     $currentIndex: number;
-    $rotation: number;
+    // $rotation: number;
   }>`
     position: absolute;
     top: 50%;
@@ -144,9 +144,7 @@ const Styled = {
     transform-style: preserve-3d;
     transition: transform 1s;
     transform: translate(-50%, -50%) translateZ(-${(props) => props.$radius}px)
-      rotateY(
-        ${(props) => -props.$theta * props.$currentIndex + props.$rotation}deg
-      );
+      rotateY(${(props) => -props.$theta * props.$currentIndex}deg);
   `,
 
   Item: styled.li<{
