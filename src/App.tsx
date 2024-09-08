@@ -10,6 +10,7 @@ import AboutSection from "./components/section/About";
 import ProjectSection from "./components/section/projects/ProjectSection";
 import ExperienceSection from "./components/section/Experience";
 import { colors } from "./constants";
+import ModalRoot from "./components/common/ModalRoot";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         <ProjectSection />
         <ExperienceSection />
       </Styled.Sections>
-      <div id="modalRoot" />
+      <ModalRoot />
     </div>
   );
 }
