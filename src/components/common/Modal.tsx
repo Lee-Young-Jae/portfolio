@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect } from "react";
+import React, { ReactNode } from "react";
 import { createPortal } from "react-dom";
 import styled, { keyframes } from "styled-components";
 import { colors } from "../../constants";
@@ -19,10 +19,6 @@ const Modal = ({
   isAnimating = false,
 }: ModalProps) => {
   const stopPropagation = (e: React.MouseEvent) => e.stopPropagation();
-
-  useEffect(() => {
-    document.body.style.overflow = opened ? "hidden" : "auto";
-  }, [opened]);
 
   return opened
     ? createPortal(
