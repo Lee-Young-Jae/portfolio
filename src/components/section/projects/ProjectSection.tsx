@@ -151,7 +151,7 @@ const Styled = {
     backdrop-filter: blur(0.5px);
     background-color: rgba(30, 41, 73, 0.5);
     border-radius: 10px;
-    padding: 26px 40px;
+    padding: 26px;
     border: 0.6px solid rgba(12, 120, 120, 0.7);
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
     max-width: 476px;
