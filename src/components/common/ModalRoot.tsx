@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { isIOSUser } from "../../utils";
 
 const mutationObserverOption: MutationObserverInit = {
   childList: true,
@@ -14,7 +15,9 @@ const ModalRoot = () => {
       observer = new MutationObserver(() => {
         const size = ref.current?.childNodes.length || 0;
         document.body.style.overflow = size > 0 ? "hidden" : "auto";
-        document.body.style.paddingRight = size > 0 ? "11px" : "0";
+        if (!isIOSUser()) {
+          document.body.style.paddingRight = size > 0 ? "11px" : "0";
+        }
       });
       observer.observe(ref.current, mutationObserverOption);
 
