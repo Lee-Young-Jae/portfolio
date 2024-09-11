@@ -141,6 +141,7 @@ const Styled = {
     padding: 0 26px;
     @media (max-width: 800px) {
       grid-template-columns: 1fr;
+      padding: 0;
     }
   `,
   ProjectCard: styled.div`
