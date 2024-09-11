@@ -158,6 +158,7 @@ const Styled = {
     max-height: 80vh;
     overflow-y: scroll;
     scrollbar-width: none;
+    will-change: transform, opacity;
     animation: ${({ $isAnimating, $opened }) => {
       if ($isAnimating) {
         return $opened ? ModalAnimation.fadeOutAndSlideDown : "none";
