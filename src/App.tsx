@@ -1,5 +1,5 @@
 import "./App.css";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import styled from "styled-components";
 
@@ -9,10 +9,15 @@ import Navigator from "./components/common/Navigator";
 import AboutSection from "./components/section/About";
 import ProjectSection from "./components/section/projects/ProjectSection";
 import ExperienceSection from "./components/section/Experience";
-import { colors } from "./constants";
 import ModalRoot from "./components/common/ModalRoot";
+import useSectionObserver from "./hooks/useSectionObserver";
+import { colors, sectionList } from "./constants";
 
 function App() {
+  const [activeSection, setActiveSection] = useState<string>(sectionList.ABOUT);
+
+  useSectionObserver({ setActiveSection });
+
   return (
     <div className="App">
       <Styled.Background>
@@ -23,7 +28,7 @@ function App() {
           </Styled.Canvas>
         </Suspense>
       </Styled.Background>
-      <Navigator />
+      <Navigator activeSection={activeSection} />
       <Styled.Sections>
         <AboutSection />
         <ProjectSection />
