@@ -165,10 +165,10 @@ const Styled = {
     transform-origin: center center;
     width: 400px;
     height: 450px;
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     transform-style: preserve-3d;
-    transition: transform 0.5s, opacity 0.5s filter 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
     transform: translate(-50%, -50%)
       rotateY(${(props) => props.$theta * props.$index}deg)
       translateZ(${(props) => props.$radius}px);
