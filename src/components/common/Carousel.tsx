@@ -1,4 +1,10 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import styled from "styled-components";
 import { colors } from "../../constants";
 import ImageWithLoading from "./ImageWithLoading";
@@ -14,9 +20,9 @@ type Direction = "left" | "right";
 
 const Carousel = ({ images }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [dragDistance, setDragDistance] = useState(0);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const dragDistance = useRef(0);
   // const [rotation, setRotation] = useState(0); // 드래그에 따라 회전하는 효과
 
   const { $theta, $radius } = useMemo(() => {
@@ -44,26 +50,26 @@ const Carousel = ({ images }: CarouselProps) => {
   );
 
   const handleDragStart = (e: React.MouseEvent | React.TouchEvent) => {
-    setIsDragging(true);
-    setStartX("touches" in e ? e.touches[0].clientX : e.clientX); // touches가 있는 경우 모바일 터치
+    isDragging.current = true;
+    startX.current = "touches" in e ? e.touches[0].clientX : e.clientX; // touches가 있는 경우 모바일 터치
   };
 
   const handleDragMove = (e: React.MouseEvent | React.TouchEvent) => {
-    if (!isDragging) return;
+    if (!isDragging.current) return;
 
     let currentX = "touches" in e ? e.touches[0].clientX : e.clientX;
-    const distance = currentX - startX;
+    const distance = currentX - startX.current;
     //  setRotation(distance);
-    setDragDistance(distance);
+    dragDistance.current = distance;
   };
 
   const handleDragEnd = () => {
-    setIsDragging(false);
-    if (Math.abs(dragDistance) > 50) {
+    isDragging.current = false;
+    if (Math.abs(dragDistance.current) > 50) {
       // 50px 이상 드래그한 경우
-      move(dragDistance > 0 ? "left" : "right");
+      move(dragDistance.current > 0 ? "left" : "right");
     }
-    setDragDistance(0);
+    dragDistance.current = 0;
     // setRotation(0);
   };
 
@@ -159,10 +165,10 @@ const Styled = {
     transform-origin: center center;
     width: 400px;
     height: 450px;
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     transform-style: preserve-3d;
-    transition: transform 0.5s, opacity 0.5s filter 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
     transform: translate(-50%, -50%)
       rotateY(${(props) => props.$theta * props.$index}deg)
       translateZ(${(props) => props.$radius}px);
