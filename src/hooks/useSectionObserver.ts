@@ -1,12 +1,14 @@
 import { useEffect } from "react";
 
-import { sectionList } from "../constants/sections";
-
-interface SectionObserverProps {
-  setActiveSection: (sectionId: string) => void;
+interface SectionObserverProps<T extends string> {
+  setActiveSection: (sectionId: T) => void;
+  sectionList: Record<string, T>;
 }
 
-const useSectionObserver = ({ setActiveSection }: SectionObserverProps) => {
+const useSectionObserver = <T extends string>({
+  setActiveSection,
+  sectionList,
+}: SectionObserverProps<T>) => {
   useEffect(() => {
     const sections = Object.values(sectionList)
       .map((section) => document.getElementById(section))
@@ -16,7 +18,7 @@ const useSectionObserver = ({ setActiveSection }: SectionObserverProps) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
+            setActiveSection(entry.target.id as T);
           }
         });
       },
