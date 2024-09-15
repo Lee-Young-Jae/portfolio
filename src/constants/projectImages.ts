@@ -117,23 +117,28 @@ const projectImages = {
   ],
   TAKE_CARE_OF_MY_REFRIGERATOR: [
     {
-      src: "https://user-images.githubusercontent.com/78532129/208683596-eac9561c-9fce-4717-9f45-6fda68a7c0ff.gif",
+      // src: "https://user-images.githubusercontent.com/78532129/208683596-eac9561c-9fce-4717-9f45-6fda68a7c0ff.gif",
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F1bc3802e-12ea-4c1f-bf10-71def58b8c40%2F%25E1%2584%2582%25E1%2585%25A2_%25E1%2584%2582%25E1%2585%25A2%25E1%2586%25BC%25E1%2584%258C%25E1%2585%25A1%25E1%2586%25BC%25E1%2584%2580%25E1%2585%25A9_%25E1%2584%2580%25E1%2585%25AA%25E1%2586%25AB%25E1%2584%2585%25E1%2585%25B51.webp?table=block&id=10281b43-34ec-80a3-81de-dca715f69521&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1200&userId=&cache=v2",
       alt: "내 냉장고 관리",
     },
     {
-      src: "https://user-images.githubusercontent.com/78532129/208683642-11974775-3906-4847-887b-4113edf29627.gif",
+      // src: "https://user-images.githubusercontent.com/78532129/208683642-11974775-3906-4847-887b-4113edf29627.gif",
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F8f7e545e-0e6f-4b29-a888-4d2f687cd780%2F%25E1%2584%2582%25E1%2585%25A2_%25E1%2584%2582%25E1%2585%25A2%25E1%2586%25BC%25E1%2584%258C%25E1%2585%25A1%25E1%2586%25BC%25E1%2584%2580%25E1%2585%25A9_%25E1%2584%2580%25E1%2585%25AA%25E1%2586%25AB%25E1%2584%2585%25E1%2585%25B52.webp?table=block&id=10281b43-34ec-80e2-bf43-c454815509fc&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1200&userId=&cache=v2",
       alt: "내 냉장고 관리2",
     },
     {
-      src: "https://user-images.githubusercontent.com/78532129/208683677-6577570f-fcf5-495b-a39a-a237103f1057.gif",
+      // src: "https://user-images.githubusercontent.com/78532129/208683677-6577570f-fcf5-495b-a39a-a237103f1057.gif",
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F0e7b6588-8845-424f-b63a-e73a220ab0fd%2F%25E1%2584%2582%25E1%2585%25A2_%25E1%2584%2582%25E1%2585%25A2%25E1%2586%25BC%25E1%2584%258C%25E1%2585%25A1%25E1%2586%25BC%25E1%2584%2580%25E1%2585%25A9_%25E1%2584%2580%25E1%2585%25AA%25E1%2586%25AB%25E1%2584%2585%25E1%2585%25B53.webp?table=block&id=ab86c878-a981-4d7d-ba59-afec21b2fee6&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1200&userId=&cache=v2",
       alt: "내 냉장고 관리3",
     },
     {
-      src: "https://user-images.githubusercontent.com/78532129/208682823-102cf58d-6bf9-4e66-b4a2-3430f9084a23.gif",
+      // src: "https://user-images.githubusercontent.com/78532129/208682823-102cf58d-6bf9-4e66-b4a2-3430f9084a23.gif",
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F02188c97-6361-46c7-80e5-21446a40d5f5%2F%25E1%2584%258C%25E1%2585%25A1%25E1%2586%25BC%25E1%2584%2587%25E1%2585%25A1%25E1%2584%2580%25E1%2585%25AE%25E1%2584%2582%25E1%2585%25B5.webp?table=block&id=10281b43-34ec-80e4-b8e2-d38006e9a55e&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1200&userId=&cache=v2",
       alt: "장바구니",
     },
     {
-      src: "https://user-images.githubusercontent.com/78532129/208682521-5e1edf27-2449-4a2d-a356-7f5f9f8ee63d.gif",
+      // src: "https://user-images.githubusercontent.com/78532129/208682521-5e1edf27-2449-4a2d-a356-7f5f9f8ee63d.gif",
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2Fedb051e3-4afa-4b1c-ab3e-e7cf990e5904%2F%25E1%2584%2585%25E1%2585%25A2%25E1%2586%25AB%25E1%2584%2583%25E1%2585%25B5%25E1%2586%25BC%25E1%2584%2591%25E1%2585%25A6%25E1%2584%258B%25E1%2585%25B5%25E1%2584%258C%25E1%2585%25B5_%25E1%2584%2592%25E1%2585%25AC%25E1%2584%258B%25E1%2585%25AF%25E1%2586%25AB%25E1%2584%2580%25E1%2585%25A1%25E1%2584%258B%25E1%2585%25B5%25E1%2586%25B8.webp.webp?table=block&id=10281b43-34ec-800f-98bc-c462601248a4&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1200&userId=&cache=v2",
       alt: "랜딩페이지, 회원가입",
     },
   ],
