@@ -1,13 +1,18 @@
 import Section from "../common/Section";
 import styled from "styled-components";
 import { colors, sectionList } from "../../constants";
-import profile from "../../assets/me_profile.jpeg";
+import profile from "../../assets/me_profile.webp";
 
 const AboutSection = () => {
   return (
     <Section id={sectionList.ABOUT}>
       <Styled.ImageWrapper>
-        <Styled.Profile src={profile} alt="profile" />
+        <Styled.Profile
+          src={profile}
+          width="164"
+          height="164"
+          alt="profile image"
+        />
       </Styled.ImageWrapper>
 
       <Styled.Title>안녕, 세상! 🙋</Styled.Title>
