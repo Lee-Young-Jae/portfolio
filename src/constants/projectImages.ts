@@ -1,5 +1,3 @@
-import Portfolio from "../components/section/projects/modal/포트폴리오";
-
 const projectImages = {
   같이면접: [
     {
