@@ -7,6 +7,8 @@ import SafetyWatch from "./modal/SafetyWatch";
 import MonggeulMonggeul from "./modal/몽글몽글";
 import Darf from "./modal/Darf";
 import TakeCareOfMyRefrigerator from "./modal/TakeCareOfMyRefrigerator";
+import YosoUI from "./modal/YosoUI";
+// import 포트폴리오 from "./modal/포트폴리오";
 
 const ProjectsSection = () => {
   return (
@@ -16,6 +18,47 @@ const ProjectsSection = () => {
       subtitle="주요 프로젝트"
     >
       <Styled.ProjectContainer>
+        <Styled.ProjectCard>
+          <Styled.ProjectTitle>
+            React 기반 UI 라이브러리, 요소 UI (진행중)
+          </Styled.ProjectTitle>
+          <Styled.LinkWrapper>
+            <Styled.ProjectLink
+              href="https://www.npmjs.com/package/yoso-ui"
+              target="_blank"
+            >
+              https://www.npmjs.com/package/yoso-ui
+            </Styled.ProjectLink>
+          </Styled.LinkWrapper>
+          <Styled.ProjectDetail>
+            React 기반 프로젝트에서 재사용 가능한 UI 컴포넌트를 제공하는
+            라이브러리입니다. UI 컴포넌트를 Storybook을 통해 컴포넌트의 다양한
+            시나리오를 시각적으로 확인할 수 있도록 구성하였습니다.
+          </Styled.ProjectDetail>
+          <ModalTrigger>
+            <YosoUI />
+          </ModalTrigger>
+        </Styled.ProjectCard>
+        {/* <Styled.ProjectCard>
+          <Styled.ProjectTitle>포트폴리오 사이트</Styled.ProjectTitle>
+          <Styled.LinkWrapper>
+            <Styled.ProjectLink
+              href="https://youngjae-portfolio.vercel.app/"
+              target="_blank"
+            >
+              https://youngjae-portfolio.vercel.app
+            </Styled.ProjectLink>
+          </Styled.LinkWrapper>
+          <Styled.ProjectDetail>
+            이 포트폴리오 사이트는 UI 재사용성과 성능 최적화에 중점을 두고
+            개발되었습니다. React와 styled-components를 활용해 모듈화된
+            컴포넌트를 구성하고, Three.js와 @react-three/fiber를 이용해
+            인터랙티브 3D 그래픽을 통합했습니다.
+          </Styled.ProjectDetail>
+          <ModalTrigger>
+            <포트폴리오 />
+          </ModalTrigger>
+        </Styled.ProjectCard> */}
         <Styled.ProjectCard>
           <Styled.ProjectTitle>
             가상 면접 AI 피드백 서비스, 같이면접
