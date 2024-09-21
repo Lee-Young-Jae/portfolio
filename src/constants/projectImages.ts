@@ -142,6 +142,16 @@ const projectImages = {
       alt: "랜딩페이지, 회원가입",
     },
   ],
+  Portfolio: [
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2Ff3b3b3b4-3b3b-4b3b-8b3b-3b3b3b3b3b3b%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-09-01_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_3.19.00.png?table=block&id=3b3b3b3b-3b3b-4b3b-8b3b-3b3b3b3b3b3b&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=2000&userId=&cache=v2",
+      alt: "포트폴리오",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2F3b3b3b3b-3b3b-4b3b-8b3b-3b3b3b3b3b3b%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-09-01_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_3.19.00.png?table=block&id=3b3b3b3b-3b3b-4b3b-8b3b-3b3b3b3b3b3b&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=2000&userId=&cache=v2",
+      alt: "포트폴리오2",
+    },
+  ],
 } as const;
 
 export { projectImages };
