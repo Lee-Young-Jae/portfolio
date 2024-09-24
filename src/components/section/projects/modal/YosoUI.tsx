@@ -28,6 +28,17 @@ const YosoUI = () => {
             https://github.com/Lee-Young-Jae/yoso-ui
           </Styled.Link>
         </Styled.LinkContainer>
+
+        <Styled.LinkContainer>
+          docs:
+          <Styled.Link
+            href="https://lee-young-jae.github.io/yoso-ui/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            https://lee-young-jae.github.io/yoso-ui/
+          </Styled.Link>
+        </Styled.LinkContainer>
       </Styled.Header>
 
       <Styled.Section>
