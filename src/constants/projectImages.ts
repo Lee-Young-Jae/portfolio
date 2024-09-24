@@ -152,6 +152,28 @@ const projectImages = {
       alt: "포트폴리오2",
     },
   ],
+  YOSO_UI: [
+    {
+      src: "https://file.notion.so/f/f/4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2/8166f3bd-3030-4366-9e4c-0632564e735b/imageSlider1.webp?table=block&id=10b81b43-34ec-80ed-9f06-ee9dfc34c2df&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&expirationTimestamp=1727272800000&signature=aUy74aXVNac4lAxdRQlEk7ywrwygjtWHYvuYTARi6kg&downloadName=imageSlider1.webp",
+      alt: "imageSlider Storybook - 기본 슬라이더",
+    },
+    {
+      src: "https://file.notion.so/f/f/4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2/9e466cfa-dd1b-4193-933c-4811b0e614ee/toast1.webp?table=block&id=10b81b43-34ec-8051-b88b-f0b39489bad2&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&expirationTimestamp=1727272800000&signature=5ZXPRsDDUZRvV0KcHHb458tJ1frrBq1P8mWWVO8B2nk&downloadName=toast1.webp",
+      alt: "toast Storybook - 여러 개의 토스트 표시",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2Fda29e8fc-f644-46f8-81ee-b48705ed053f%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-09-24_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_8.52.31.png?table=block&id=10b81b43-34ec-80cf-bc0d-f36efcf3fd03&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1420&userId=&cache=v2",
+      alt: "YOSO UI - NPM",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2Fa60ef4c6-ccae-4488-a481-60a51850ed29%2F%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2024-09-24_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_8.53.46.png?table=block&id=b5a3aa04-0765-47a7-b852-c42c85ebe47e&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1050&userId=&cache=v2",
+      alt: "modal Storybook - 스크린샷",
+    },
+    {
+      src: "https://young-jae.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2%2Fc69ede6d-993f-48d5-82e1-e45028b1c670%2Flogo.webp?table=block&id=10981b43-34ec-80c3-909c-f1575d566455&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&width=1420&userId=&cache=v2",
+      alt: "YOSO UI - 로고",
+    },
+  ],
 } as const;
 
 export { projectImages };
