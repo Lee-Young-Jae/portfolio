@@ -1,3 +1,5 @@
+import { projectImages } from "../../../../constants";
+import Carousel from "../../../common/Carousel";
 import Styled from "./Style";
 
 const YosoUI = () => {
@@ -6,6 +8,8 @@ const YosoUI = () => {
       <Styled.Header>
         <Styled.Title>YOSO UI</Styled.Title>
         <Styled.Date>2024년 09월</Styled.Date>
+
+        <Carousel images={Object.values(projectImages.YOSO_UI)} />
 
         <Styled.LinkContainer>
           npm:
