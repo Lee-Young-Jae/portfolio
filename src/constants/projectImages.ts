@@ -152,13 +152,14 @@ const projectImages = {
       alt: "포트폴리오2",
     },
   ],
+
   YOSO_UI: [
     {
-      src: "https://file.notion.so/f/f/4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2/8166f3bd-3030-4366-9e4c-0632564e735b/imageSlider1.webp?table=block&id=10b81b43-34ec-80ed-9f06-ee9dfc34c2df&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&expirationTimestamp=1727272800000&signature=aUy74aXVNac4lAxdRQlEk7ywrwygjtWHYvuYTARi6kg&downloadName=imageSlider1.webp",
+      src: "https://i.ibb.co/9q1Pbcd/image-Slider1.webp",
       alt: "imageSlider Storybook - 기본 슬라이더",
     },
     {
-      src: "https://file.notion.so/f/f/4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2/9e466cfa-dd1b-4193-933c-4811b0e614ee/toast1.webp?table=block&id=10b81b43-34ec-8051-b88b-f0b39489bad2&spaceId=4bf4eb4a-0971-4aa4-9f87-8592bbbcf3f2&expirationTimestamp=1727272800000&signature=5ZXPRsDDUZRvV0KcHHb458tJ1frrBq1P8mWWVO8B2nk&downloadName=toast1.webp",
+      src: "https://i.ibb.co/3SZBTbg/toast1.webp",
       alt: "toast Storybook - 여러 개의 토스트 표시",
     },
     {
