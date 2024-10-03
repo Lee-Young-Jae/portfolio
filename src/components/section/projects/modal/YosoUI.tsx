@@ -60,13 +60,12 @@ const YosoUI = () => {
         <Styled.SectionTitle>프로젝트 개요</Styled.SectionTitle>
         <Styled.Paragraph>
           yoso-ui는 다양한 React 기반 프로젝트에서 재사용 가능한 UI 컴포넌트를
-          제공하는 라이브러리입니다. "요소"라는 한국어 단어에서 영감을 받아
-          명명된 이 라이브러리는 스타일 일관성을 유지하면서도 사용 편의성을
-          극대화한 모듈화된 UI 컴포넌트를 제공합니다. Button, Modal 등의 다양한
-          UI 요소를 포함하며, 각 컴포넌트는 styled-components를 활용해
-          구성되었습니다. 더불어 Storybook을 통해 각 컴포넌트에 대한 다양한
-          시나리오를 시각적으로 확인하고, 문서와 데모를 제공하여 개발자들이 쉽게
-          사용할 수 있도록 했습니다.
+          제공하는 라이브러리입니다. "요소"라는 단어에서 영감을 받아 제작된 이
+          라이브러리는 모듈화된 UI 컴포넌트를 제공합니다. ImageSlider, Modal
+          등의 다양한 UI 요소를 포함하며, 각 컴포넌트는 styled-components를
+          활용해 구성되었습니다. 더불어 Storybook을 통해 각 컴포넌트에 대한
+          다양한 시나리오를 시각적으로 확인하고, 문서와 데모를 제공하여
+          개발자들이 쉽게 사용할 수 있도록 했습니다.
         </Styled.Paragraph>
       </Styled.Section>
 
