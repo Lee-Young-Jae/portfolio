@@ -20,7 +20,7 @@ const ProjectsSection = () => {
       <Styled.ProjectContainer>
         <Styled.ProjectCard>
           <Styled.ProjectTitle>
-            React 기반 UI 라이브러리, 요소 UI (진행중)
+            React 기반 UI 라이브러리, 요소 UI (개선 중)
           </Styled.ProjectTitle>
           <Styled.LinkWrapper>
             <Styled.ProjectLink
