@@ -84,8 +84,24 @@ const 같이면접 = () => {
       <Styled.Section>
         <Styled.SectionTitle>개발 및 기여 내용</Styled.SectionTitle>
         <Styled.Paragraph>
-          서비스 랜딩페이지, 비디오목록 / 상세 페이지, 비디오 설정 / 녹화 기능
-          및 공용 컴포넌트 구현
+          <Styled.List>
+            <Styled.ListItem>
+              페이지 구성 및 레이아웃 설계, (랜딩페이지, 비디오목록 / 상세
+              페이지, 비디오 설정 / 녹화 페이지)
+            </Styled.ListItem>
+            <Styled.ListItem>
+              비디오 녹화 기능 구현 및 녹화된 비디오 S3 업로드
+            </Styled.ListItem>
+            <Styled.ListItem>
+              비디오 인코딩 기능, 썸네일 이미지 추출 구현 및 최적화
+            </Styled.ListItem>
+            <Styled.ListItem>
+              Web Speech API를 활용한 Speech To Text 기능 구현
+            </Styled.ListItem>
+            <Styled.ListItem>
+              Modal, NoData, Dialog 등의 공용 컴포넌트 구현
+            </Styled.ListItem>
+          </Styled.List>
         </Styled.Paragraph>
       </Styled.Section>
 
