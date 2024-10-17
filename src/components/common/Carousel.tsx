@@ -6,6 +6,7 @@ import React, {
   useState,
 } from "react";
 import styled from "styled-components";
+
 import { colors } from "../../constants";
 import ImageWithLoading from "./ImageWithLoading";
 
@@ -34,20 +35,30 @@ const Carousel = ({ images }: CarouselProps) => {
 
   const moveTo = useCallback(
     (index: number) => {
-      setCurrentIndex(index);
+      setCurrentIndex((prevIndex) => {
+        const totalItems = images.length;
+        const adjustedPrevIndex =
+          ((prevIndex % totalItems) + totalItems) % totalItems;
+        let difference = index - adjustedPrevIndex;
+
+        // 최소 회전 경로 계산
+        if (difference > totalItems / 2) {
+          difference -= totalItems;
+        } else if (difference < -totalItems / 2) {
+          difference += totalItems;
+        }
+
+        return prevIndex + difference;
+      });
     },
-    [setCurrentIndex]
+    [images.length]
   );
 
-  const move = useCallback(
-    (direction: Direction) => {
-      const nextIndex =
-        ((direction === "right" ? 1 : -1) + currentIndex + images.length) %
-        images.length;
-      setCurrentIndex(nextIndex);
-    },
-    [currentIndex, images]
-  );
+  const move = useCallback((direction: Direction) => {
+    setCurrentIndex(
+      (prevIndex) => prevIndex + (direction === "right" ? 1 : -1)
+    );
+  }, []);
 
   const handleDragStart = (e: React.MouseEvent | React.TouchEvent) => {
     isDragging.current = true;
@@ -79,7 +90,7 @@ const Carousel = ({ images }: CarouselProps) => {
     return () => {
       document.removeEventListener("mouseup", handleMouseUp);
     };
-  }, [handleDragEnd]);
+  }, []);
 
   return (
     <Styled.Carousel
@@ -94,25 +105,31 @@ const Carousel = ({ images }: CarouselProps) => {
         $theta={$theta}
         $radius={$radius}
         $currentIndex={currentIndex}
-        // $rotation={rotation}
       >
-        {images.map((image, index) => (
-          <Styled.Item
-            key={index}
-            $theta={$theta}
-            $radius={$radius}
-            $index={index}
-            $currentIndex={currentIndex}
-            onClick={() => moveTo(index)}
-          >
-            <ImageWithLoading
-              src={image.src}
-              alt={`carousel-${image.alt}`}
-              width="400px"
-              height="450px"
-            />
-          </Styled.Item>
-        ))}
+        {images.map((image, index) => {
+          const totalItems = images.length;
+          const adjustedCurrentIndex =
+            ((currentIndex % totalItems) + totalItems) % totalItems;
+          const isActive = adjustedCurrentIndex === index;
+
+          return (
+            <Styled.Item
+              key={index}
+              $theta={$theta}
+              $radius={$radius}
+              $index={index}
+              $isActive={isActive}
+              onClick={() => moveTo(index)}
+            >
+              <ImageWithLoading
+                src={image.src}
+                alt={`carousel-${image.alt}`}
+                width="400px"
+                height="450px"
+              />
+            </Styled.Item>
+          );
+        })}
       </Styled.Container>
       <Styled.NavButton direction="left" onClick={() => move("left")} />
       <Styled.NavButton direction="right" onClick={() => move("right")} />
@@ -136,7 +153,6 @@ const Styled = {
     $theta: number;
     $radius: number;
     $currentIndex: number;
-    // $rotation: number;
   }>`
     position: absolute;
     top: 50%;
@@ -157,7 +173,7 @@ const Styled = {
     $theta: number;
     $radius: number;
     $index: number;
-    $currentIndex: number;
+    $isActive: boolean;
   }>`
     position: absolute;
     top: 50%;
@@ -165,8 +181,6 @@ const Styled = {
     transform-origin: center center;
     width: 400px;
     height: 450px;
-    /* margin: 0; */
-    /* padding: 0; */
     transform-style: preserve-3d;
     transition: transform 0.5s, opacity 0.5s;
     transform: translate(-50%, -50%)
@@ -178,10 +192,8 @@ const Styled = {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-
     border: 0.6px solid rgba(12, 120, 120, 0.7);
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
-
     overflow: hidden;
 
     img {
@@ -190,9 +202,8 @@ const Styled = {
       object-fit: cover;
       /* border-radius: 10px; */
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-      opacity: ${(props) => (props.$index === props.$currentIndex ? 1 : 0.5)};
-      filter: ${(props) =>
-        props.$index === props.$currentIndex ? "none" : "grayscale(70%)"};
+      opacity: ${(props) => (props.$isActive ? 1 : 0.5)};
+      filter: ${(props) => (props.$isActive ? "none" : "grayscale(70%)")};
       user-select: none;
       pointer-events: none;
     }
@@ -240,18 +251,18 @@ const Styled = {
     ${(props) =>
       props.direction === "left"
         ? `
-      &&::after {
-        border-width: 3px 3px 0 0;
-        transform: translateY(-50%) rotate(-135deg);
-      }
-    `
+        &&::after {
+          border-width: 3px 3px 0 0;
+          transform: translateY(-50%) rotate(-135deg);
+        }
+      `
         : `
-     
-      &&::after {
-        border-width: 3px 0 0 3px;
-        transform: translateY(-50%) rotate(135deg);
-      }
-    `}
+        
+        &&::after {
+          border-width: 3px 0 0 3px;
+          transform: translateY(-50%) rotate(135deg);
+        }
+      `}
   `,
 };
 
