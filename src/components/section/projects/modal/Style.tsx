@@ -32,6 +32,11 @@ const Styled = {
   Link: styled.a`
     color: ${colors.MINT_300};
     text-decoration: none;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    display: inline-block;
+    white-space: pre-wrap;
   `,
 
   Section: styled.section`
