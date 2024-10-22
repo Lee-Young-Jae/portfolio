@@ -183,11 +183,6 @@ const SafetyWatch = () => {
             개선했습니다.
           </Styled.ListItem>
           <Styled.ListItem>
-            <Styled.Highlight>인피니티 스크롤링 적용</Styled.Highlight>: API
-            호출 시 평균 응답 시간이 3초 정도로 초기 로딩 시간이 너무 긴 성능
-            문제를 해결하기 위해 인피니티 스크롤링을 적용했습니다.
-          </Styled.ListItem>
-          <Styled.ListItem>
             <Styled.Highlight>디바운스 패턴 적용</Styled.Highlight>: 뉴스 키워드
             필터 기능을 추가하며 입력에 반응하여 데이터를 요청하는 경우,
             사용자가 입력을 마칠 때까지 여러 번의 뉴스 필터 함수가 작동해 여러번

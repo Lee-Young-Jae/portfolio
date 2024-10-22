@@ -125,8 +125,12 @@ const 같이면접 = () => {
             <Styled.Highlight>80% 이상</Styled.Highlight>의 인코딩 시간을
             개선했습니다. 이렇게 단축한 시간은 사용자 입력을 추가로 받는 UI를
             도입해 사용자가 인코딩 시간을 인지하기 힘들도록 개선하였고 이
-            과정에서 발생하는 S3 업로드, 썸네일 추출 등의 비동기 함수를
-            promise.all을 통해 병렬처리하여 성능을 높였습니다. 프로덕트 환경에서
+            과정에서 발생하는 썸네일 추출 등의 비동기 함수를 promise.all을 통해
+            동시 실행시켜 실행 시간 범위를{" "}
+            <Styled.Highlight>약 177ms ~ 240ms</Styled.Highlight> 에서{" "}
+            <Styled.Highlight>약 112 ms ~ 172 ms</Styled.Highlight> 정도로{" "}
+            <Styled.Highlight>약 30% </Styled.Highlight> 이상의 실행 시간 단축을
+            이끌어냈습니다. 이와 같은 성능 개선을 통해 프로덕트 환경에서
             서비스의 최대 녹화 시간인 5분 영상 기준 평균{" "}
             <Styled.Highlight>20초</Styled.Highlight> 안팎의 인코딩 시간 효율을
             보이고 있습니다.
@@ -172,7 +176,7 @@ const 같이면접 = () => {
               사용하지 않고 브라우저에 내장된 Web Speech API를 사용하여 영상
               녹화와 함께 사용자의 음성이 텍스트로 변환되도록 구현하였습니다.
               변환 과정은 라이브하게 진행되기 때문에 추가적인 지연시간없이
-              변환이 가능했고 기존 S3에서 영상의 읽기 접근 횟수를{" "}
+              변환이 가능했고 기존 기획 대비 S3에서 영상의 읽기 접근 횟수를{" "}
               <Styled.Highlight>절반</Styled.Highlight>으로 줄이고 사용자가
               피드백을 받아볼 수 있는 시간을 평균 9분에서 10초로{" "}
               <Styled.Highlight>98.15%</Styled.Highlight> 단축시켰습니다.
