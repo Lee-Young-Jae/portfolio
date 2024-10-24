@@ -27,12 +27,13 @@ const Modal = ({
           $isAnimating={isAnimating}
           $opened={opened}
         >
+          <Styled.ModalHideButton onClick={hide} aria-label="모달 닫기" />
+
           <Styled.ModalInner
             onClick={stopPropagation}
             $isAnimating={isAnimating}
             $opened={opened}
           >
-            <Styled.ModalHideButton onClick={hide} aria-label="모달 닫기" />
             {children}
           </Styled.ModalInner>
         </Styled.Modal>,
@@ -169,11 +170,11 @@ const Styled = {
   `,
 
   ModalHideButton: styled.button`
-    position: fixed;
+    position: absolute;
     top: 8px;
     right: 8px;
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
     background-color: transparent;
     border: none;
 
@@ -198,6 +199,11 @@ const Styled = {
 
     &:after {
       transform: rotate(-45deg);
+    }
+
+    @media (max-width: 768px) {
+      width: 20px;
+      height: 20px;
     }
   `,
 
