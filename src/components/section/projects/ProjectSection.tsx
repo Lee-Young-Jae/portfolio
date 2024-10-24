@@ -198,30 +198,34 @@ const Styled = {
     border: 0.6px solid rgba(12, 120, 120, 0.7);
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
     max-width: 476px;
-    gap: 6px;
   `,
   ProjectTitle: styled.h3`
-    font-size: 1.1rem;
+    font-size: 20px;
     width: 100%;
+    margin-bottom: 6px;
   `,
 
-  ProjectDetail: styled.div`
+  ProjectDetail: styled.p`
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 1.2;
+    line-height: 1.4;
+    font-size: 16px;
+    margin-bottom: 16px;
   `,
   LinkWrapper: styled.div`
     display: flex;
     align-items: end;
     gap: 6px;
-    margin-top: 10px;
     flex-wrap: wrap;
+    margin-bottom: 8px;
   `,
 
   ProjectLink: styled.a<{ $isActive?: boolean }>`
     text-decoration: none;
     word-break: break-all;
+    font-size: 15px;
 
     color: ${({ $isActive = true }) => {
       return $isActive ? colors.MINT_700 : colors.GRAY_500;
@@ -235,28 +239,11 @@ const Styled = {
     text-decoration: ${({ $isActive = true }) => {
       return $isActive ? "none" : "line-through";
     }};
-
-    font-size: 16px;
   `,
 
   LinkDescription: styled.sub`
     color: ${colors.GRAY_500};
     font-size: 12px;
-  `,
-
-  ModalTrigger: styled.button`
-    margin-top: 16px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: initial;
-    border: 1px solid ${colors.MINT_700};
-    color: ${colors.MINT_700};
-    font-size: 18px;
-    cursor: pointer;
-
-    &:hover {
-      box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
-    }
   `,
 };
 

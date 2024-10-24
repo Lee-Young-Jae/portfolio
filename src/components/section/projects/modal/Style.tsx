@@ -3,9 +3,9 @@ import { colors } from "../../../../constants";
 
 const Styled = {
   Article: styled.article`
-    margin-top: 32px;
     color: ${colors.WHITE};
     font-family: "Arial", sans-serif;
+    line-height: 1.6;
   `,
 
   Header: styled.header`

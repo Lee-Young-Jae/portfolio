@@ -31,13 +31,12 @@ const ModalTrigger = ({ title, children, trigger }: ModalTriggerProps) => {
 
 const Styled = {
   ModalTrigger: styled.button`
-    margin-top: 16px;
     padding: 10px 20px;
     border-radius: 10px;
     background-color: initial;
     border: 1px solid ${colors.MINT_700};
     color: ${colors.MINT_700};
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
   `,
 };
