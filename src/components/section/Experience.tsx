@@ -13,6 +13,22 @@ const ExperienceSection = () => {
         <Styled.ExperienceTimeline>
           <Styled.ExperiencePoint />
           <Styled.ExperienceDetail>
+            <Styled.ExperienceDate>2024년 11월 ~ 진행중</Styled.ExperienceDate>
+            <Styled.ExperienceTitle>
+              주식회사 텐소프트웍스
+            </Styled.ExperienceTitle>
+            <Styled.ExperienceSubTitle>
+              프론트엔드 팀 / 선임
+            </Styled.ExperienceSubTitle>
+          </Styled.ExperienceDetail>
+          <Styled.ExperienceContent>
+            데이터 및 AI 기반 웹 솔루션 전문 개발사의 프론트엔드 개발 팀에서
+            전문성을 쌓아가고 있습니다.
+          </Styled.ExperienceContent>
+        </Styled.ExperienceTimeline>
+        <Styled.ExperienceTimeline>
+          <Styled.ExperiencePoint />
+          <Styled.ExperienceDetail>
             <Styled.ExperienceDate>
               2023년 03월 ~ 2023년 05월
             </Styled.ExperienceDate>
