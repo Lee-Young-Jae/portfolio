@@ -18,9 +18,25 @@ const ProjectsSection = () => {
       subtitle="주요 프로젝트"
     >
       <Styled.ProjectContainer>
+        {/* <Styled.ProjectCard>
+          <Styled.ProjectTitle>Dengle</Styled.ProjectTitle>
+          <Styled.LinkWrapper>
+            <Styled.ProjectLink href="https://dengle.co.kr" target="_blank">
+              https://dengle.co.kr
+            </Styled.ProjectLink>
+          </Styled.LinkWrapper>
+          <Styled.ProjectDetail>
+            React 기반 프로젝트에서 재사용 가능한 UI 컴포넌트를 제공하는
+            라이브러리입니다. UI 컴포넌트를 Storybook을 통해 컴포넌트의 다양한
+            시나리오를 시각적으로 확인할 수 있도록 구성하였습니다.
+          </Styled.ProjectDetail>
+          <ModalTrigger>
+            <YosoUI />
+          </ModalTrigger>
+        </Styled.ProjectCard> */}
         <Styled.ProjectCard>
           <Styled.ProjectTitle>
-            React 기반 UI 라이브러리, 요소 UI (개선 중)
+            React 기반 UI 라이브러리, 요소 UI
           </Styled.ProjectTitle>
           <Styled.LinkWrapper>
             <Styled.ProjectLink
@@ -80,7 +96,7 @@ const ProjectsSection = () => {
             <같이면접 />
           </ModalTrigger>
         </Styled.ProjectCard>
-        <Styled.ProjectCard>
+        {/* <Styled.ProjectCard>
           <Styled.ProjectTitle>
             산업 재해 예방 플랫폼, Safety-Watch
           </Styled.ProjectTitle>
@@ -100,7 +116,7 @@ const ProjectsSection = () => {
           <ModalTrigger>
             <SafetyWatch />
           </ModalTrigger>
-        </Styled.ProjectCard>
+        </Styled.ProjectCard> */}
         <Styled.ProjectCard>
           <Styled.ProjectTitle>모임 관리 서비스, 몽글</Styled.ProjectTitle>
           <Styled.LinkWrapper>
