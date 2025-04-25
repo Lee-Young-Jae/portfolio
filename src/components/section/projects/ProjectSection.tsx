@@ -3,7 +3,7 @@ import { colors, sectionList } from "../../../constants";
 import Section from "../../common/Section";
 import ModalTrigger from "../../common/ModalTrigger";
 import 같이면접 from "./modal/같이면접";
-import SafetyWatch from "./modal/SafetyWatch";
+// import SafetyWatch from "./modal/SafetyWatch";
 import MonggeulMonggeul from "./modal/몽글몽글";
 import Darf from "./modal/Darf";
 import TakeCareOfMyRefrigerator from "./modal/TakeCareOfMyRefrigerator";
